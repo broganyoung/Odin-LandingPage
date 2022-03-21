@@ -21,6 +21,12 @@ a{
     text-decoration: none;
 }
 
+header p a, header li a{
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+
 p a, li a{
     display: inline-block;
     color: blue;
@@ -80,6 +86,14 @@ inner-column {
     line-height: 1;
 }
 
+.hero-logo-text{
+    font-family: sans-serif;
+    color: var(--heromaincl);
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1;
+}
+
 /*Components*/
 
 .button{
@@ -94,6 +108,13 @@ inner-column {
 
 graphic-diptych{
     display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+graphic-diptych picture{
+    display: block;
 }
 
 graphic-diptych text-content{
@@ -102,10 +123,6 @@ graphic-diptych text-content{
 
 graphic-diptych p, .button{
     margin-top: 10px;
-}
-
-graphic-diptych picture{
-    display: block;
 }
 
 @media (min-width: 700px){
@@ -119,11 +136,43 @@ graphic-diptych picture{
     }
 }
 
+text-diptych{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+text-diptych left-text{
+    display: block;
+}
+
+text-diptych right-text{
+    display: block;
+}
+
+@media (min-width: 700px){
+    text-diptych{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    text-diptych :is(left-text, right-text){
+        flex-basis: 50%;
+    }
+}
+
+
+
 header, footer, main {
     border: 4px solid red;
 }
 
-product-section{
+header, footer {
+    background-color: var(--darkbg);
+}
+
+.welcome{
     display: block;
     border: 4px solid lime;
     background-color: var(--darkbg);
