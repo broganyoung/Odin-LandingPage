@@ -112,6 +112,18 @@ outer-column {
     line-height: 1;
 }
 
+infobox .navbar-voice{
+    margin-top: 40px;
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+infobox .calm-voice{
+    margin-bottom: 40px;
+    margin-left: 50px;
+    font-size: 14px;
+}
+
 .caption-voice{
     font-family: sans-serif;
     color: var(--textcl);
@@ -166,6 +178,13 @@ outer-column {
     border-radius: 5px;
 }
 
+infobox .button{
+    border: 4px solid whitesmoke;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 60px;
+}
+
 /*Modules*/
 
 graphic-diptych{
@@ -211,6 +230,7 @@ text-diptych left-text{
 
 text-diptych right-text{
     display: block;
+    text-align: right;
 }
 
 @media (min-width: 700px){
@@ -254,6 +274,17 @@ product-diptych picture img{
 }
 
 
+infobox{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--lightbg);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
 header, footer, main {
     border: 4px solid red;
 }
@@ -278,5 +309,11 @@ header, footer {
     display: block;
     border: 4px solid lime;
     background-color: var(--quotebg);
+}
+
+.action{
+    display: block;
+    border: 4px solid lime;
+    background-color: whitesmoke;
 }
 
