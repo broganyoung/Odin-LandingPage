@@ -69,6 +69,16 @@ inner-column {
     margin-left: auto;
 }
 
+outer-column {
+    display: block;
+    border: 4px solid orange;
+    padding: 10px;
+    width: 98%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 /*Typograhpy*/
 
 .loud-voice{
@@ -86,12 +96,40 @@ inner-column {
     line-height: 1;
 }
 
-.hero-logo-text{
+.herologo-voice{
     font-family: sans-serif;
     color: var(--heromaincl);
     font-size: 24px;
     font-weight: 900;
     line-height: 1;
+}
+
+.navbar-voice{
+    font-family: sans-serif;
+    color: var(--heromaincl);
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.caption-voice{
+    font-family: sans-serif;
+    color: var(--textcl);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.header-voice{
+    font-family: sans-serif;
+    color: var(--textcl);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 /*Components*/
@@ -162,6 +200,34 @@ text-diptych right-text{
     }
 }
 
+product-diptych{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+product-diptych picture{
+    display: block;
+}
+
+
+product-diptych picture img{
+    border: 5px solid var(--lightbg);
+    border-radius: 15px;
+}
+
+
+@media (min-width: 700px){
+    product-diptych{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    product-diptych :is(picture){
+        flex-basis: 50%;
+    }
+}
 
 
 header, footer, main {
@@ -177,3 +243,10 @@ header, footer {
     border: 4px solid lime;
     background-color: var(--darkbg);
 }
+
+.product{
+    display: block;
+    border: 4px solid lime;
+    background-color: whitesmoke;
+}
+
