@@ -50,18 +50,15 @@ html{
 body{
     display:flex;
     flex-direction: column;
-    border: 10px solid blue;
     min-height: 100vh;
 }
 
 main{
     flex-grow: 1;
-    border: 10px solid pink;
 }
 
 inner-column {
     display: block;
-    border: 4px solid orange;
     padding: 10px;
     width: 98%;
     max-width: 900px;
@@ -71,7 +68,6 @@ inner-column {
 
 outer-column {
     display: block;
-    border: 4px solid orange;
     padding: 10px;
     width: 98%;
     max-width: 1200px;
@@ -203,8 +199,14 @@ graphic-diptych picture{
     display: block;
 }
 
+graphic-diptych picture img{
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
 graphic-diptych text-content{
     display: block;
+    margin-top: 60px;
 }
 
 graphic-diptych p, .button{
@@ -254,6 +256,7 @@ product-diptych{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-bottom: 60px;
 }
 
 product-diptych picture{
@@ -290,35 +293,27 @@ infobox{
     border-radius: 10px;
 }
 
-header, footer, main {
-    border: 4px solid red;
-}
-
 header, footer {
     background-color: var(--darkbg);
 }
 
 .welcome{
     display: block;
-    border: 4px solid lime;
     background-color: var(--darkbg);
 }
 
 .product{
     display: block;
-    border: 4px solid lime;
     background-color: whitesmoke;
 }
 
 .quote{
     display: block;
-    border: 4px solid lime;
     background-color: var(--quotebg);
 }
 
 .action{
     display: block;
-    border: 4px solid lime;
     background-color: whitesmoke;
 }
 
