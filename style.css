@@ -132,6 +132,30 @@ outer-column {
     margin-bottom: 30px;
 }
 
+.quote-voice{
+    font-family: sans-serif;
+    color: var(--textcl);
+    font-size: 36px;
+    font-weight: 200;
+    font-style: italic;
+    line-height: 1;
+    text-align: left;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.quoter-voice{
+    font-family: sans-serif;
+    color: var(--textcl);
+    font-size: 16px;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 1;
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
 /*Components*/
 
 .button{
@@ -248,5 +272,11 @@ header, footer {
     display: block;
     border: 4px solid lime;
     background-color: whitesmoke;
+}
+
+.quote{
+    display: block;
+    border: 4px solid lime;
+    background-color: var(--quotebg);
 }
 
