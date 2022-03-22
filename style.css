@@ -124,6 +124,11 @@ infobox .calm-voice{
     font-size: 14px;
 }
 
+footer .calm-voice{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 .caption-voice{
     font-family: sans-serif;
     color: var(--textcl);
